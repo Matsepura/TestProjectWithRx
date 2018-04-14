@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EFC29A95CC099A4CF469CC4 /* Pods_TsumTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCF898A33146DCC1C8F53A7 /* Pods_TsumTestApp.framework */; };
+		45E3FC8D208123DB006A35B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FC8C208123DB006A35B6 /* AppDelegate.swift */; };
+		45E3FC92208123DB006A35B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E3FC90208123DB006A35B6 /* Main.storyboard */; };
+		45E3FC94208123DC006A35B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E3FC93208123DC006A35B6 /* Assets.xcassets */; };
+		45E3FC97208123DC006A35B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E3FC95208123DC006A35B6 /* LaunchScreen.storyboard */; };
+		45E3FCAA20812DAB006A35B6 /* CountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCA920812DAB006A35B6 /* CountriesService.swift */; };
+		45E3FCAC20812DBC006A35B6 /* CountriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCAB20812DBC006A35B6 /* CountriesProvider.swift */; };
+		45E3FCAE20812DD7006A35B6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCAD20812DD7006A35B6 /* Coordinator.swift */; };
+		45E3FCB020812DE2006A35B6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCAF20812DE2006A35B6 /* AppCoordinator.swift */; };
+		45E3FCB220812E25006A35B6 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCB120812E25006A35B6 /* BaseController.swift */; };
+		45E3FCB520812FA1006A35B6 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCB420812FA1006A35B6 /* JSONCodable.swift */; };
+		45E3FCB720812FBE006A35B6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCB620812FBE006A35B6 /* NetworkClient.swift */; };
+		45E3FCBC20812FFF006A35B6 /* CommonAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCBB20812FFF006A35B6 /* CommonAliases.swift */; };
+		45E3FCBE2081304E006A35B6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCBD2081304E006A35B6 /* BaseViewModel.swift */; };
+		45E3FCC02081311D006A35B6 /* PublicConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCBF2081311D006A35B6 /* PublicConstants.swift */; };
+		45E3FCC320813150006A35B6 /* Strings+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCC220813150006A35B6 /* Strings+Localized.swift */; };
+		45E3FCC52081324B006A35B6 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCC42081324B006A35B6 /* ResponseParser.swift */; };
+		45E3FCC720813289006A35B6 /* ErrorResponseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCC620813289006A35B6 /* ErrorResponseInfo.swift */; };
+		45E3FCC9208200E0006A35B6 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCC8208200E0006A35B6 /* ServiceLayer.swift */; };
+		45E3FCCB20820118006A35B6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCCA20820118006A35B6 /* Service.swift */; };
+		45E3FCCD2082016E006A35B6 /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCCC2082016E006A35B6 /* CountryList.swift */; };
+		45E3FCCF208201B8006A35B6 /* RequestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCCE208201B8006A35B6 /* RequestTarget.swift */; };
+		45E3FCD520820B39006A35B6 /* Countries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E3FCD420820B39006A35B6 /* Countries.storyboard */; };
+		45E3FCD720820B47006A35B6 /* CountriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCD620820B47006A35B6 /* CountriesListViewController.swift */; };
+		45E3FCD920820D4D006A35B6 /* CountriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCD820820D4D006A35B6 /* CountriesListViewModel.swift */; };
+		45E3FCDB20820D6B006A35B6 /* CountriesListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCDA20820D6B006A35B6 /* CountriesListTableViewModel.swift */; };
+		45E3FCDD20820D7A006A35B6 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCDC20820D7A006A35B6 /* CountryListViewModel.swift */; };
+		45E3FCE520821351006A35B6 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCDF20821350006A35B6 /* StoryboardSceneBased.swift */; };
+		45E3FCE620821351006A35B6 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCE020821350006A35B6 /* UICollectionView+Reusable.swift */; };
+		45E3FCE720821351006A35B6 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCE120821350006A35B6 /* Reusable.swift */; };
+		45E3FCE820821351006A35B6 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCE220821350006A35B6 /* UITableView+Reusable.swift */; };
+		45E3FCE920821351006A35B6 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCE320821350006A35B6 /* NibLoadable.swift */; };
+		45E3FCEA20821351006A35B6 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCE420821350006A35B6 /* NibOwnerLoadable.swift */; };
+		45E3FCEC20821364006A35B6 /* CountryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCEB20821364006A35B6 /* CountryListCell.swift */; };
+		45E3FCEE208213AD006A35B6 /* AnyViewModelConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCED208213AD006A35B6 /* AnyViewModelConfigurable.swift */; };
+		45E3FCF2208277D1006A35B6 /* CountryListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E3FCF1208277D1006A35B6 /* CountryListCell.xib */; };
+		45E3FCF520827C09006A35B6 /* Country.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E3FCF420827C09006A35B6 /* Country.storyboard */; };
+		45E3FCF720827C1E006A35B6 /* CountryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCF620827C1E006A35B6 /* CountryInfoViewController.swift */; };
+		45E3FCF920827C28006A35B6 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCF820827C28006A35B6 /* CountryViewModel.swift */; };
+		45E3FCFB20827C70006A35B6 /* CountryInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCFA20827C70006A35B6 /* CountryInfoViewModel.swift */; };
+		45E3FCFD20827CEC006A35B6 /* Sequence+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCFC20827CEC006A35B6 /* Sequence+Split.swift */; };
+		45E3FD0020827EC6006A35B6 /* ViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FCFF20827EC6006A35B6 /* ViewControllerHelper.swift */; };
+		45E3FD02208280D8006A35B6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FD01208280D8006A35B6 /* Country.swift */; };
+		45E3FD04208280FF006A35B6 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3FD03208280FF006A35B6 /* Currency.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45E3FC89208123DB006A35B6 /* TsumTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TsumTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E3FC8C208123DB006A35B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45E3FC91208123DB006A35B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45E3FC93208123DC006A35B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45E3FC96208123DC006A35B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45E3FC98208123DC006A35B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E3FCA920812DAB006A35B6 /* CountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesService.swift; sourceTree = "<group>"; };
+		45E3FCAB20812DBC006A35B6 /* CountriesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesProvider.swift; sourceTree = "<group>"; };
+		45E3FCAD20812DD7006A35B6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		45E3FCAF20812DE2006A35B6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		45E3FCB120812E25006A35B6 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		45E3FCB420812FA1006A35B6 /* JSONCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCodable.swift; sourceTree = "<group>"; };
+		45E3FCB620812FBE006A35B6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		45E3FCBB20812FFF006A35B6 /* CommonAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAliases.swift; sourceTree = "<group>"; };
+		45E3FCBD2081304E006A35B6 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		45E3FCBF2081311D006A35B6 /* PublicConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicConstants.swift; sourceTree = "<group>"; };
+		45E3FCC220813150006A35B6 /* Strings+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Localized.swift"; sourceTree = "<group>"; };
+		45E3FCC42081324B006A35B6 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
+		45E3FCC620813289006A35B6 /* ErrorResponseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponseInfo.swift; sourceTree = "<group>"; };
+		45E3FCC8208200E0006A35B6 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		45E3FCCA20820118006A35B6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		45E3FCCC2082016E006A35B6 /* CountryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
+		45E3FCCE208201B8006A35B6 /* RequestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTarget.swift; sourceTree = "<group>"; };
+		45E3FCD420820B39006A35B6 /* Countries.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Countries.storyboard; sourceTree = "<group>"; };
+		45E3FCD620820B47006A35B6 /* CountriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewController.swift; sourceTree = "<group>"; };
+		45E3FCD820820D4D006A35B6 /* CountriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewModel.swift; sourceTree = "<group>"; };
+		45E3FCDA20820D6B006A35B6 /* CountriesListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListTableViewModel.swift; sourceTree = "<group>"; };
+		45E3FCDC20820D7A006A35B6 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		45E3FCDF20821350006A35B6 /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSceneBased.swift; sourceTree = "<group>"; };
+		45E3FCE020821350006A35B6 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		45E3FCE120821350006A35B6 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		45E3FCE220821350006A35B6 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		45E3FCE320821350006A35B6 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		45E3FCE420821350006A35B6 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		45E3FCEB20821364006A35B6 /* CountryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListCell.swift; sourceTree = "<group>"; };
+		45E3FCED208213AD006A35B6 /* AnyViewModelConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyViewModelConfigurable.swift; sourceTree = "<group>"; };
+		45E3FCF1208277D1006A35B6 /* CountryListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryListCell.xib; sourceTree = "<group>"; };
+		45E3FCF420827C09006A35B6 /* Country.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Country.storyboard; sourceTree = "<group>"; };
+		45E3FCF620827C1E006A35B6 /* CountryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoViewController.swift; sourceTree = "<group>"; };
+		45E3FCF820827C28006A35B6 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		45E3FCFA20827C70006A35B6 /* CountryInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoViewModel.swift; sourceTree = "<group>"; };
+		45E3FCFC20827CEC006A35B6 /* Sequence+Split.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Split.swift"; sourceTree = "<group>"; };
+		45E3FCFF20827EC6006A35B6 /* ViewControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHelper.swift; sourceTree = "<group>"; };
+		45E3FD01208280D8006A35B6 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		45E3FD03208280FF006A35B6 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		B1706ED86E7F98A7A9D7A25D /* Pods-TsumTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TsumTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TsumTestApp/Pods-TsumTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BBD7C38EEB90900842A6F407 /* Pods-TsumTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TsumTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TsumTestApp/Pods-TsumTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		BFCF898A33146DCC1C8F53A7 /* Pods_TsumTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TsumTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45E3FC86208123DB006A35B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFC29A95CC099A4CF469CC4 /* Pods_TsumTestApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45E3FC80208123DB006A35B6 = {
+			isa = PBXGroup;
+			children = (
+				45E3FC8B208123DB006A35B6 /* TsumTestApp */,
+				45E3FC8A208123DB006A35B6 /* Products */,
+				D5E57BB9FCCB232591F2AF30 /* Pods */,
+				7E506D6135F932FFCA95A474 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45E3FC8A208123DB006A35B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FC89208123DB006A35B6 /* TsumTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45E3FC8B208123DB006A35B6 /* TsumTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCA620812D36006A35B6 /* Services */,
+				45E3FCA520812D02006A35B6 /* Network */,
+				45E3FCA420812CE5006A35B6 /* Coordinator */,
+				45E3FCA320812CE4006A35B6 /* View */,
+				45E3FCA220812CE1006A35B6 /* View Model */,
+				45E3FCA120812CC8006A35B6 /* Model */,
+				45E3FCA020812CBE006A35B6 /* Supporting Files */,
+				45E3FC9F20812CAE006A35B6 /* Resources */,
+			);
+			path = TsumTestApp;
+			sourceTree = "<group>";
+		};
+		45E3FC9F20812CAE006A35B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FC95208123DC006A35B6 /* LaunchScreen.storyboard */,
+				45E3FC90208123DB006A35B6 /* Main.storyboard */,
+				45E3FC93208123DC006A35B6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		45E3FCA020812CBE006A35B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCB820812FD6006A35B6 /* Common */,
+				45E3FC8C208123DB006A35B6 /* AppDelegate.swift */,
+				45E3FCED208213AD006A35B6 /* AnyViewModelConfigurable.swift */,
+				45E3FC98208123DC006A35B6 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45E3FCA120812CC8006A35B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCC620813289006A35B6 /* ErrorResponseInfo.swift */,
+				45E3FCCC2082016E006A35B6 /* CountryList.swift */,
+				45E3FD01208280D8006A35B6 /* Country.swift */,
+				45E3FD03208280FF006A35B6 /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45E3FCA220812CE1006A35B6 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FD052082A256006A35B6 /* Countries */,
+				45E3FD062082A25F006A35B6 /* Country */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		45E3FCA320812CE4006A35B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCB120812E25006A35B6 /* BaseController.swift */,
+				45E3FCD120820B04006A35B6 /* CountriesList */,
+				45E3FCF320827B34006A35B6 /* Country */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45E3FCA420812CE5006A35B6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCAD20812DD7006A35B6 /* Coordinator.swift */,
+				45E3FCAF20812DE2006A35B6 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		45E3FCA520812D02006A35B6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCB620812FBE006A35B6 /* NetworkClient.swift */,
+				45E3FCA820812D4E006A35B6 /* Provider */,
+				45E3FCA720812D45006A35B6 /* Parser */,
+				45E3FCB320812F93006A35B6 /* Helper */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		45E3FCA620812D36006A35B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCC8208200E0006A35B6 /* ServiceLayer.swift */,
+				45E3FCCA20820118006A35B6 /* Service.swift */,
+				45E3FCA920812DAB006A35B6 /* CountriesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		45E3FCA720812D45006A35B6 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCC42081324B006A35B6 /* ResponseParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		45E3FCA820812D4E006A35B6 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCAB20812DBC006A35B6 /* CountriesProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		45E3FCB320812F93006A35B6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCB420812FA1006A35B6 /* JSONCodable.swift */,
+				45E3FCCE208201B8006A35B6 /* RequestTarget.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		45E3FCB820812FD6006A35B6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCBA20812FE6006A35B6 /* UIKit */,
+				45E3FCB920812FDD006A35B6 /* Foundation */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		45E3FCB920812FDD006A35B6 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCC120813143006A35B6 /* String */,
+				45E3FCBB20812FFF006A35B6 /* CommonAliases.swift */,
+				45E3FCBD2081304E006A35B6 /* BaseViewModel.swift */,
+				45E3FCBF2081311D006A35B6 /* PublicConstants.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		45E3FCBA20812FE6006A35B6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCFE20827EB6006A35B6 /* ViewController */,
+				45E3FCDE20821350006A35B6 /* Reusable */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		45E3FCC120813143006A35B6 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCC220813150006A35B6 /* Strings+Localized.swift */,
+				45E3FCFC20827CEC006A35B6 /* Sequence+Split.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		45E3FCD120820B04006A35B6 /* CountriesList */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCD620820B47006A35B6 /* CountriesListViewController.swift */,
+				45E3FCEB20821364006A35B6 /* CountryListCell.swift */,
+				45E3FCF1208277D1006A35B6 /* CountryListCell.xib */,
+				45E3FCD420820B39006A35B6 /* Countries.storyboard */,
+			);
+			path = CountriesList;
+			sourceTree = "<group>";
+		};
+		45E3FCDE20821350006A35B6 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCDF20821350006A35B6 /* StoryboardSceneBased.swift */,
+				45E3FCE020821350006A35B6 /* UICollectionView+Reusable.swift */,
+				45E3FCE120821350006A35B6 /* Reusable.swift */,
+				45E3FCE220821350006A35B6 /* UITableView+Reusable.swift */,
+				45E3FCE320821350006A35B6 /* NibLoadable.swift */,
+				45E3FCE420821350006A35B6 /* NibOwnerLoadable.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		45E3FCF320827B34006A35B6 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCF620827C1E006A35B6 /* CountryInfoViewController.swift */,
+				45E3FCF420827C09006A35B6 /* Country.storyboard */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		45E3FCFE20827EB6006A35B6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCFF20827EC6006A35B6 /* ViewControllerHelper.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		45E3FD052082A256006A35B6 /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCD820820D4D006A35B6 /* CountriesListViewModel.swift */,
+				45E3FCDA20820D6B006A35B6 /* CountriesListTableViewModel.swift */,
+				45E3FCDC20820D7A006A35B6 /* CountryListViewModel.swift */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		45E3FD062082A25F006A35B6 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				45E3FCFA20827C70006A35B6 /* CountryInfoViewModel.swift */,
+				45E3FCF820827C28006A35B6 /* CountryViewModel.swift */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		7E506D6135F932FFCA95A474 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFCF898A33146DCC1C8F53A7 /* Pods_TsumTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5E57BB9FCCB232591F2AF30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1706ED86E7F98A7A9D7A25D /* Pods-TsumTestApp.debug.xcconfig */,
+				BBD7C38EEB90900842A6F407 /* Pods-TsumTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45E3FC88208123DB006A35B6 /* TsumTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E3FC9B208123DC006A35B6 /* Build configuration list for PBXNativeTarget "TsumTestApp" */;
+			buildPhases = (
+				043219053B8158396E49BC25 /* [CP] Check Pods Manifest.lock */,
+				45E3FC85208123DB006A35B6 /* Sources */,
+				45E3FC86208123DB006A35B6 /* Frameworks */,
+				45E3FC87208123DB006A35B6 /* Resources */,
+				C3CE11010C1680607BC061F7 /* [CP] Embed Pods Frameworks */,
+				A10C15CDDE0EDD75E621AAC0 /* [CP] Copy Pods Resources */,
+				45E3FCD0208209AF006A35B6 /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TsumTestApp;
+			productName = TsumTestApp;
+			productReference = 45E3FC89208123DB006A35B6 /* TsumTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45E3FC81208123DB006A35B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Semen Matsepura";
+				TargetAttributes = {
+					45E3FC88208123DB006A35B6 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 45E3FC84208123DB006A35B6 /* Build configuration list for PBXProject "TsumTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45E3FC80208123DB006A35B6;
+			productRefGroup = 45E3FC8A208123DB006A35B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45E3FC88208123DB006A35B6 /* TsumTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45E3FC87208123DB006A35B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E3FC97208123DC006A35B6 /* LaunchScreen.storyboard in Resources */,
+				45E3FCF2208277D1006A35B6 /* CountryListCell.xib in Resources */,
+				45E3FC94208123DC006A35B6 /* Assets.xcassets in Resources */,
+				45E3FC92208123DB006A35B6 /* Main.storyboard in Resources */,
+				45E3FCD520820B39006A35B6 /* Countries.storyboard in Resources */,
+				45E3FCF520827C09006A35B6 /* Country.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		043219053B8158396E49BC25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TsumTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45E3FCD0208209AF006A35B6 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which ${PODS_ROOT}/SwiftLint/swiftlint >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		A10C15CDDE0EDD75E621AAC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TsumTestApp/Pods-TsumTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3CE11010C1680607BC061F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TsumTestApp/Pods-TsumTestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TsumTestApp/Pods-TsumTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45E3FC85208123DB006A35B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E3FCC320813150006A35B6 /* Strings+Localized.swift in Sources */,
+				45E3FCB520812FA1006A35B6 /* JSONCodable.swift in Sources */,
+				45E3FCDD20820D7A006A35B6 /* CountryListViewModel.swift in Sources */,
+				45E3FCB020812DE2006A35B6 /* AppCoordinator.swift in Sources */,
+				45E3FCBE2081304E006A35B6 /* BaseViewModel.swift in Sources */,
+				45E3FCE720821351006A35B6 /* Reusable.swift in Sources */,
+				45E3FCC02081311D006A35B6 /* PublicConstants.swift in Sources */,
+				45E3FCB220812E25006A35B6 /* BaseController.swift in Sources */,
+				45E3FCE920821351006A35B6 /* NibLoadable.swift in Sources */,
+				45E3FCAC20812DBC006A35B6 /* CountriesProvider.swift in Sources */,
+				45E3FD0020827EC6006A35B6 /* ViewControllerHelper.swift in Sources */,
+				45E3FCB720812FBE006A35B6 /* NetworkClient.swift in Sources */,
+				45E3FCD720820B47006A35B6 /* CountriesListViewController.swift in Sources */,
+				45E3FCE520821351006A35B6 /* StoryboardSceneBased.swift in Sources */,
+				45E3FCFB20827C70006A35B6 /* CountryInfoViewModel.swift in Sources */,
+				45E3FCE820821351006A35B6 /* UITableView+Reusable.swift in Sources */,
+				45E3FCD920820D4D006A35B6 /* CountriesListViewModel.swift in Sources */,
+				45E3FCEE208213AD006A35B6 /* AnyViewModelConfigurable.swift in Sources */,
+				45E3FCAE20812DD7006A35B6 /* Coordinator.swift in Sources */,
+				45E3FCF920827C28006A35B6 /* CountryViewModel.swift in Sources */,
+				45E3FCAA20812DAB006A35B6 /* CountriesService.swift in Sources */,
+				45E3FCCB20820118006A35B6 /* Service.swift in Sources */,
+				45E3FD04208280FF006A35B6 /* Currency.swift in Sources */,
+				45E3FCE620821351006A35B6 /* UICollectionView+Reusable.swift in Sources */,
+				45E3FCC9208200E0006A35B6 /* ServiceLayer.swift in Sources */,
+				45E3FC8D208123DB006A35B6 /* AppDelegate.swift in Sources */,
+				45E3FCEA20821351006A35B6 /* NibOwnerLoadable.swift in Sources */,
+				45E3FCCD2082016E006A35B6 /* CountryList.swift in Sources */,
+				45E3FCBC20812FFF006A35B6 /* CommonAliases.swift in Sources */,
+				45E3FD02208280D8006A35B6 /* Country.swift in Sources */,
+				45E3FCDB20820D6B006A35B6 /* CountriesListTableViewModel.swift in Sources */,
+				45E3FCEC20821364006A35B6 /* CountryListCell.swift in Sources */,
+				45E3FCCF208201B8006A35B6 /* RequestTarget.swift in Sources */,
+				45E3FCC720813289006A35B6 /* ErrorResponseInfo.swift in Sources */,
+				45E3FCFD20827CEC006A35B6 /* Sequence+Split.swift in Sources */,
+				45E3FCF720827C1E006A35B6 /* CountryInfoViewController.swift in Sources */,
+				45E3FCC52081324B006A35B6 /* ResponseParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45E3FC90208123DB006A35B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45E3FC91208123DB006A35B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45E3FC95208123DC006A35B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45E3FC96208123DC006A35B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45E3FC99208123DC006A35B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45E3FC9A208123DC006A35B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45E3FC9C208123DC006A35B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1706ED86E7F98A7A9D7A25D /* Pods-TsumTestApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/TsumTestApp/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TsumTest.TsumTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45E3FC9D208123DC006A35B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD7C38EEB90900842A6F407 /* Pods-TsumTestApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/TsumTestApp/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TsumTest.TsumTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45E3FC84208123DB006A35B6 /* Build configuration list for PBXProject "TsumTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E3FC99208123DC006A35B6 /* Debug */,
+				45E3FC9A208123DC006A35B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45E3FC9B208123DC006A35B6 /* Build configuration list for PBXNativeTarget "TsumTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E3FC9C208123DC006A35B6 /* Debug */,
+				45E3FC9D208123DC006A35B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45E3FC81208123DB006A35B6 /* Project object */;
+}
