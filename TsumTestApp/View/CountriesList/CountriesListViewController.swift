@@ -18,6 +18,7 @@ final class CountriesListViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let viewModel = CountriesListViewModel()
+    var coordinator: CountryListCoordinator?
     
     private let refreshControl = UIRefreshControl()
     private var disposeBag = DisposeBag()
@@ -65,10 +66,7 @@ final class CountriesListViewController: BaseViewController {
         viewModel.tableViewModel.selectOutlet.asObservable()
             .skip(1)
             .subscribe(onNext: { [weak self] (name) in
-                let vc = CountryInfoViewController.instantiate()
-                vc.viewModel.name = name
-                vc.title = name
-                self?.show(vc: vc)
+                self?.coordinator?.showCountryInfo(by: name)
             }).disposed(by: disposeBag)
     }
     

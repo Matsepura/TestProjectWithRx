@@ -36,6 +36,7 @@ class BaseViewController: UIViewController {
         HUD.hide()
     }
     
+    // MARK: - Alert
     func showAlert(withMessage msg: String) {
         let alert = UIAlertController(title: "Внимание!", message: msg, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Отмена", style: .default, handler: nil))

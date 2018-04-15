@@ -9,6 +9,13 @@
 import Foundation
 
 class CountryViewModel {
+    private enum Constants {
+        static let capital = "Capital: "
+        static let population = "Population: "
+        static let borders = "Borders:\n"
+        static let currencies = "Currencies:"
+    }
+    
     var info: String
     
     init() {
@@ -17,20 +24,20 @@ class CountryViewModel {
     
     init(country: Country) {
         var info = ""
-        info.append("Capital: ")
+        info.append(Constants.capital)
         info.append("\(country.capital)")
         info = info.addSpacing()
-        info.append("Population: ")
+        info.append(Constants.population)
         info.append("\(country.population)")
         
         if country.borders.count > 0 {
             info = info.addSpacing()
-            info.append("Borders:\n")
+            info.append(Constants.borders)
             info.append("\(country.borders.joined(separator: "\n"))")
         }
         
         info = info.addSpacing()
-        info.append("Currencies:")
+        info.append(Constants.currencies)
         country.currencies.forEach({
             info.append("\n" + $0.name + "  -  " + $0.code)
         })

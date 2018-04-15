@@ -10,8 +10,9 @@ import RxSwift
 import UIKit
 
 final class CountryInfoViewController: BaseViewController {
-    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var infoTextView: UITextView!
     
+    var coordinator: CountryInfoCoordinator?
     let viewModel = CountryInfoViewModel()
     private var disposeBag = DisposeBag()
     
@@ -34,7 +35,7 @@ final class CountryInfoViewController: BaseViewController {
                     self.hideLoading()
                     self.showAlert(withMessage: message)
                 case .success:
-                    self.infoLabel.text = self.viewModel.countryViewModel?.info
+                    self.infoTextView.text = self.viewModel.countryViewModel?.info
                     self.hideLoading()
                 }
             }).disposed(by: disposeBag)
@@ -42,5 +43,9 @@ final class CountryInfoViewController: BaseViewController {
     
     override func retry() {
         viewModel.obtainCountry()
+    }
+    
+    @IBAction func doneAction(_ sender: Any) {
+        coordinator?.stop()
     }
 }

@@ -10,6 +10,10 @@ import Foundation
 import RxSwift
 
 final class CountryInfoViewModel: BaseViewModel {
+    private enum Constants {
+        static let error = "Ошибка сервера!"
+    }
+    
     var name = ""
     let service = ServiceLayer.shared.countriesService
     var countryViewModel: CountryViewModel?
@@ -19,7 +23,7 @@ final class CountryInfoViewModel: BaseViewModel {
         service.obtainCountry(name: name,
                               completion: { [weak self] (countryData) in
                                 guard let country = countryData.country else {
-                                    self?.state.value = .failure(message: "Ошибка сервера!")
+                                    self?.state.value = .failure(message: Constants.error)
                                     return
                                 }
                                 self?.countryViewModel = CountryViewModel(country: country)
